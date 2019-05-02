@@ -15,7 +15,10 @@
     	class="pt.limaia.springdemoone.TrackCoach">
     	<constructor-arg ref="myFortune"/>
     </bean>
-    
+     <bean id="myCricketCoach" 
+    	class="pt.limaia.springdemoone.CricketCoach">
+    	<property name="fortuneService" ref="myFortune"/>
+    </bean>
 </beans>
 
 
