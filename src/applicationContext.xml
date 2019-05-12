@@ -18,6 +18,8 @@
      <bean id="myCricketCoach" 
     	class="pt.limaia.springdemoone.CricketCoach">
     	<property name="fortuneService" ref="myFortune"/>
+    	<property name="team" value="SunRiders company"/>
+    	<property name="emailAddress" value="thebest@hjj.com"/>
     </bean>
 </beans>
 
