@@ -8,7 +8,7 @@ public class SetterDemoApp {
 
 		//load Spring config file
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		
+
 		//retrieve the bean
 		CricketCoach coach = context.getBean("myCricketCoach", CricketCoach.class);
 		
@@ -16,6 +16,9 @@ public class SetterDemoApp {
 		System.out.println(coach.getDailyWorkout());
 		System.out.println(coach.getDailyFortune());
 		
+		System.out.println(coach.getTeam());
+		System.out.println(coach.getEmailAddress());
+
 		//close the context
 		context.close();
 	}

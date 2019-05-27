@@ -4,6 +4,9 @@ public class CricketCoach implements Coach {
 	
 	private FortuneService fortuneService;
 	
+	private String emailAddress;
+	private String team;
+	
 
 	public CricketCoach() {
 		System.out.println("Create Cricket with no arguments");
@@ -24,9 +27,26 @@ public class CricketCoach implements Coach {
 	}
 
 	public void setFortuneService(FortuneService fortuneService) {
-		System.out.println("Inside set Fortune");
+		System.out.println("[CricketCoach]:Inside set Fortune");
 		this.fortuneService = fortuneService;
 	}
 
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("[CricketCoach]:Inside set Email");
+
+		this.emailAddress = emailAddress;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
 	
 }
